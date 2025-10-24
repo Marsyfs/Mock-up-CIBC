@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-container {
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom,
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,1) 70%,
+        rgba(255,255,255,0) 100%);
+    z-index: 1000;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 0.625rem;
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #B2B7A2
+}
+
+.navbar li :last-child {
+    border-right: none;
+}
+
+.nav-scroll-button a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #B2B7A2;
+    background: #ffffff;
+    padding: 0.5rem 1rem;
+    border: 0.5rem double #B2B7A2;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);                
+}
+
+.nav-scroll-button a:hover {
+    color: #64503e;
+    text-shadow: 2px 2px 4px #cacaca;
+    border-bottom: 0.500rem solid #64503e;
+    border-top: 0.500rem solid #64503e;
+    border-right: 0.500rem solid #64503e;
+    border-left: 0.500rem solid #64503e;
+    border-style: double;
+    transition: all 0.7s ease-in-out;
+}
+
+.link a:hover{ 
+    transition: all .5s ease-in-out;
+    text-shadow: 2px 2px 4px #cacaca;
+    color: #64503e;
+}
+
+.master-stamp {
+    height: 4.375rem;
+    width: 4.375rem;
+    transition: transform .7s ease-in-out;
+}
+
+.master-stamp:hover {
+    transform: rotate(360deg);
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)), url(./istockphoto-1181140664-612x612.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.25rem;
+    z-index: 0;
+}
+
+.background-image h1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 1rem;
+    top: -16rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #B2B7A2;
+    z-index: 1;
+}
+
+.background-image h2 {
+    position: absolute;
+    padding: 3rem 0rem;
+    top: 10rem;
+    right: 18.75rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #B2B7A2;
+    z-index: 1;
+}
+
+.logo-overlay {
+    position: absolute;     
+    top: 18.75rem;               
+    left: 15.625rem;               
+    z-index: 1;            
+  }
+  
+  .logo-overlay img {
+    width: 18.75rem;             
+    height: auto;
+    opacity: 0.9;             
+  }
+
+.form-container {
+    margin-top: 8rem;
+    margin-right: 20rem;
+}
+
+.form-container label {
+    display: flex;
+    gap: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #B2B7A2;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+    width: 17.5rem;
+    height: 1.875rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.form-container button {
+    display: grid;
+    text-align: center;
+    width: 17.5rem;
+    height: 1.875rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #B2B7A2;
+    border: none;
+
+}
